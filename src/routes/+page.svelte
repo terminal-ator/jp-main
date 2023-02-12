@@ -18,11 +18,11 @@
 </script>
 
 <svelte:head>
-  <title>Home</title>
+  <title>Welcome to J.P. Enterprises and Tushar Trading Company</title>
   <meta name="description" content="JP ENTERPRISES HOME" />
 </svelte:head>
 
-<section class="bg-white dark:bg-gray-900 hero">
+<section class="bg-white dark:bg-gray-900 hero min-h-screen" id="big-fat-hero">
   <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
     <a
       href="/about"
@@ -50,18 +50,18 @@
       Buy products that consumers love for your store
     </h1>
     <p
-      class="mb-8  text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
+      class="mb-8  text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
     >
       Official Distributors of Cadbury, Godrej, Colgate and Redbull for Dadri,
       Greater Noida and Surajpur. Official Superstockist of Fena, Greater Noida.
       Wholesaler of Reckitt(Dettol, Harpic)
     </p>
     <div
-      class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
+      class=" flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
     >
       <a
         href="tel:+917982255302"
-        class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+        class="btn bg-white text-black hover:bg-blue-500 "
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@
     </div>
   </div>
 </section>
-<section class="px-4 py-8 mx-auto max-w-screen-xl text-center lg:py16 lg:px-12">
+<section class="px-4 py-8 mx-auto max-w-screen-xl  lg:py16 lg:px-12">
   <h4 class="text-4xl font-bold">Our Locations</h4>
   <div class="flex sm:flex-row items-center flex-col justify-around my-4">
     <div class="">
@@ -104,7 +104,7 @@
     </div>
   </div>
 </section>
-<section class="px-4 py-8 mx-auto max-w-screen-xl text-center lg:py16 lg:px-12">
+<section class="px-4 py-8 mx-auto max-w-screen-xl  lg:py16 lg:px-12">
   <h4 class="text-4xl font-bold">Blockbuster Brands</h4>
   <ul class="carousel mt-4">
     {#each blockbusters.data as bb}
@@ -112,3 +112,173 @@
     {/each}
   </ul>
 </section>
+
+<style>
+  #big-fat-hero {
+  }
+
+  #big-fat-hero {
+    background: -moz-linear-gradient(
+      45deg,
+      #02e1ba 0%,
+      #26c9f2 29%,
+      #d911f2 66%,
+      #ffa079 100%
+    );
+    background: -webkit-linear-gradient(
+      45deg,
+      #02e1ba 0%,
+      #26c9f2 29%,
+      #d911f2 66%,
+      #ffa079 100%
+    );
+    background: linear-gradient(
+      45deg,
+      #02e1ba 0%,
+      #26c9f2 29%,
+      #d911f2 66%,
+      #ffa079 100%
+    );
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    /*min-height: calc(100vh - 2rem);*/
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #big-fat-hero::before,
+  #big-fat-hero::after {
+    content: "";
+    width: 70vmax;
+    height: 70vmax;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.07);
+    left: -20vmin;
+    top: -20vmin;
+    animation: morph 15s linear infinite alternate, spin 20s linear infinite;
+    z-index: 1;
+    will-change: border-radius, transform;
+    transform-origin: 55% 55%;
+    pointer-events: none;
+  }
+
+  #big-fat-hero::after {
+    width: 70vmin;
+    height: 70vmin;
+    left: auto;
+    right: -10vmin;
+    top: auto;
+    bottom: 0;
+    animation: morph 10s linear infinite alternate,
+      spin 26s linear infinite reverse;
+    transform-origin: 20% 20%;
+  }
+
+  @-webkit-keyframes Gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
+  @-moz-keyframes Gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
+  @keyframes Gradient {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0 50%;
+    }
+  }
+
+  @keyframes morph {
+    0% {
+      border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+    }
+    100% {
+      border-radius: 40% 60%;
+    }
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+  .st0 {
+    display: none;
+  }
+  .st1 {
+    display: inline;
+  }
+  .st2 {
+    opacity: 0.29;
+  }
+  .st3 {
+    fill: #ffffff;
+  }
+  .st4 {
+    clip-path: url(#SVGID_2_);
+    fill: #ffffff;
+  }
+  .st5 {
+    clip-path: url(#SVGID_4_);
+  }
+  .st6 {
+    clip-path: url(#SVGID_6_);
+  }
+  .st7 {
+    clip-path: url(#SVGID_8_);
+  }
+  .st8 {
+    clip-path: url(#SVGID_10_);
+  }
+  .st9 {
+    fill: none;
+  }
+  .st10 {
+    clip-path: url(#SVGID_12_);
+  }
+  .st11 {
+    opacity: 0.7;
+  }
+  .st12 {
+    clip-path: url(#SVGID_14_);
+  }
+  .st13 {
+    opacity: 0.2;
+  }
+  .st14 {
+    clip-path: url(#SVGID_16_);
+  }
+  .st15 {
+    opacity: 0.3;
+    fill: #ffffff;
+    enable-background: new;
+  }
+</style>
