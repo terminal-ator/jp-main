@@ -47,14 +47,13 @@
     <h1
       class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
     >
-      Buy products that consumers love for your store
+      Great range of products for your store, at unbeatable prices.
     </h1>
     <p
-      class="mb-8  text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
+      class="mb-8  text-lg font-normal text-neutral lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400"
     >
-      Official Distributors of Cadbury, Godrej, Colgate and Redbull for Dadri,
-      Greater Noida and Surajpur. Official Superstockist of Fena, Greater Noida.
-      Wholesaler of Reckitt(Dettol, Harpic)
+      Buy products of companies like cadbury, godrej, colgate, redbull from the
+      us, the official distributors in Dadri and Greater Noida.
     </p>
     <div
       class=" flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4"
@@ -114,10 +113,10 @@
 </section>
 
 <style>
-  #big-fat-hero {
+  .big-fat-hero {
   }
 
-  #big-fat-hero {
+  .big-fat-hero {
     background: -moz-linear-gradient(
       45deg,
       #02e1ba 0%,

@@ -5,7 +5,9 @@
 
 <Header />
 <slot />
-<footer class="footer mt-8 p-10 bg-neutral text-neutral-content">
+<footer
+  class="footer rounded-3xl mt-8 mb-4 sm:w-11/12 mx-auto  p-10 bg-black text-neutral-content"
+>
   <div>
     <span class="footer-title">Services</span>
     <a class="link link-hover">Distribution</a>
